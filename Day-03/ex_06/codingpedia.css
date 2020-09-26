@@ -1,0 +1,194 @@
+:root {
+  --border: solid 3.5px black;
+  --marg: 20px;
+  --padd: 20px;
+
+}
+
+
+/*======================Header=================*/
+
+
+header{
+  display: flex;
+  border: var(--border);
+}
+
+h1{
+
+  padding: var(--padd);
+}
+
+nav{
+  display: flex;
+  border: var(--border);
+  margin-left: auto;
+  margin-right :10px ;
+  margin-top : 10px;
+  margin-bottom : 10px;
+  padding: 5px;
+}
+
+ul{
+  border: var(--border);
+  list-style-type: non;
+  display: flex;
+  flex-direction: row;
+}
+
+li:hover{
+  color:green;
+}
+
+li{
+  display: block;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+/*----------------------Name of Tags--------------------*/
+
+.oth{
+    margin-top:-15px;
+    margin-left:5px;
+    padding : 1px;
+    background:white;
+    position:absolute;
+}
+
+.art{
+    margin-top:-32px;
+    margin-left:5px;
+    padding : 1px;
+    background:white;
+    position:absolute;
+}
+
+.foo{
+    margin-top:-15px;
+    margin-left:5px;
+    padding : 1px;
+    background:white;
+    position:absolute;
+}
+
+/*----------------------Links--------------------*/
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  background-color: lightblue;
+}
+
+a:link{
+  color: black;
+}
+
+a:visited{
+  color: black;
+}
+
+
+abbr:hover{
+  background-color: lightblue;
+}
+
+
+/*======================Body===================*/
+
+body{
+display: flex;
+height: calc(100vh - 15px);
+flex-direction: column;
+}
+
+main{
+  display: flex;
+}
+
+section{
+  border: var(--border);
+  margin : var(--marg);
+  display: flex;
+  flex-direction: column;
+  flex: 80%;
+}
+
+article{
+  border: var(--border);
+  margin : var(--marg);
+  padding: var(--padd);
+}
+
+
+aside{
+  margin : var(--marg);
+  float: right;
+  border: var(--border);
+  flex: 20%;
+  padding: var(--padd);
+}
+
+/*======================Footer===================*/
+
+footer{
+  margin-top: auto;
+  width: 99%;
+  bottom: 10px;
+  border: var(--border);
+}
+
+/*======================Form===================*/
+
+form div{
+display: flex;
+padding : 2px;
+}
+
+
+form label{
+flex: 35%;
+padding : 5px;
+}
+
+form input{
+flex: 65%;
+padding : 2px;
+}
+
+form select{
+flex: 65%;
+padding : 2px;
+}
+
+
+form textarea{
+flex: 65%;
+padding : 2px;
+}
+
+.bouton{
+  float: right;
+  width: 30%;
+  margin-right: 20px;
+}
+
+/*======================Table===================*/
+
+table{
+border: solid 2px black;
+border-collapse: collapse;
+text-align : center;
+}
+
+tr{
+border: solid 2px black;
+padding : 2px
+}
+
+td{
+border: solid 2px black;
+padding : 2px;
+}

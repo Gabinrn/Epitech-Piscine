@@ -1,0 +1,33 @@
+:root {
+  --first-p: 21px ;
+  --second-p: 27px;
+  --color-bg: yellow;
+  --first-color: black;
+  --second-color: white;
+  --color-bloob: red;
+  --font-style-blod: italic;
+  --not-break-line : blocks;
+}
+
+body {
+background-color: var(--color-bg);
+font-family: Impact, Charcoal, sans-serif;
+}
+
+.firstp{
+font-size: var(--first-p);
+background-color: var(--first-color);
+color: var(--second-color);
+}
+
+.secondp{
+font-size: var(--second-p);
+background-color: var(--second-color);
+color: var(--first-color);
+}
+
+span{
+display: var(--not-break-line);
+color: var(--color-bloob);
+font-style: var(--font-style-blod);
+}

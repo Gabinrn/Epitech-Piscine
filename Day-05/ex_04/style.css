@@ -1,0 +1,164 @@
+
+
+/*======================Body===================*/
+
+body{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/*======================Header=================*/
+
+
+
+h1{
+  text-align: center;
+  flex: auto;
+}
+
+.bleu{
+  display: flex;
+  background-color: #3399ff;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+
+/*======================Main===================*/
+
+main{
+  display: flex;
+  flex: 75%;
+  flex-direction: column;
+}
+
+
+.ok{
+  display: flex;
+  flex: 66%;
+  flex-direction: column;
+}
+
+
+.vert{
+  background-color: #99ff33;
+  flex: 33%;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+
+.jaune{
+  display: flex;
+  background-color: #ffff00;
+  flex: 50%;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+
+
+/*======================Pimp===================*/
+
+.rouge{
+  display: flex;
+  background-color: #ff5050;
+  margin: 10px;
+  flex: 7.5%;
+  border-radius: 5px;
+}
+
+/*======================Footer===================*/
+
+
+
+
+
+
+
+
+/*======================Form===================*/
+/*======================Pimp===================*/
+/*----------------------Name of Tags--------------------*/
+/*----------------------Links--------------------*/
+
+
+
+
+/*=================MediaQuery================*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+
+.bleu{
+  width: 50%;
+}
+
+.ok{
+    flex-wrap: wrap;
+    flex: 66%;
+    flex-direction: row;
+}
+
+.violet{
+  background-color: #cc33ff;
+  flex: unset;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.jaune{
+ flex: unset;
+}
+
+.violet, .jaune{
+width: calc(100% / 2 - 40px / 2);
+height: calc(50% - 40px / 2);
+}
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+.bleu{
+    width: 33%;
+}
+
+.violet{
+    background-color: #cc33ff;
+    flex: unset;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+
+
+.rose{
+    background-color: #ff33cc;
+    flex: unset;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+
+.jaune{
+flex: unset;
+
+
+}
+
+ .violet, .rose, .jaune{
+width: calc(100% / 3 - 60px / 3);
+height: calc(50% - 60px / 3);
+
+}
+
+.ok{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+}

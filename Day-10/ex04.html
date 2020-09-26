@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Day-10</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+      <header>
+        <h1>Day-10</h1>
+      </header>
+
+      <div>
+
+        <nav>
+          <button class="btn" style="border: solid 1px black; background-color: lightgrey;">Clique Here</button>
+        </nav>
+
+      </div>
+
+        <footer>
+
+        </footer>
+  <script type="text/javascript">
+    $(".btn").on('click', function(evt){
+      var x = $.getScript("https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js");
+      var y = $.getScript("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js");
+      var z = $.getScript("https://code.jquery.com/jquery-3.5.1.slim.min.js");
+      console.log(x);
+      console.log(y);
+      console.log(z);
+      $(document).ajaxSuccess(alert("Script added Succefully"))
+    });
+
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

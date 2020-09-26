@@ -1,0 +1,121 @@
+
+/*======================Body===================*/
+
+body{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/*======================Header=================*/
+
+
+
+h1{
+  text-align: center;
+  flex: auto;
+}
+
+.bleu{
+  display: flex;
+  background-color: #3399ff;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+
+/*======================Main===================*/
+
+main{
+  display: flex;
+  flex: 75%;
+  flex-direction: column;
+}
+
+
+.ok{
+  display: flex;
+  flex: 66%;
+  flex-direction: column;
+}
+
+.sec{
+  display: flex;
+  flex: 66%;
+  flex-direction: column;
+}
+
+.vert{
+  background-color: #99ff33;
+  flex: 33%;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+
+.jaune{
+  display: flex;
+  background-color: #ffff00;
+  flex: 50%;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.sec > .violet{
+  display: flex;
+  flex: none;
+}
+
+
+/*======================Pimp===================*/
+
+.rouge{
+  display: flex;
+  background-color: #ff5050;
+  margin: 10px;
+  flex: 7.5%;
+  border-radius: 5px;
+}
+
+/*======================Footer===================*/
+
+
+
+
+
+
+
+
+/*======================Form===================*/
+/*======================Pimp===================*/
+/*----------------------Name of Tags--------------------*/
+/*----------------------Links--------------------*/
+
+
+
+
+/*=================MediaQuery================*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+.bleu{
+  width: 50%;
+}
+
+.violet{
+  display: flex;
+  background-color: #cc33ff;
+  flex: 50%;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.sec{
+  flex-direction: row;
+}
+
+.sec2{
+  display: flex;
+  flex: 66%;
+  flex-direction: row;
+}

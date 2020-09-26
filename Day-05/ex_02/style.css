@@ -1,0 +1,94 @@
+
+
+/*======================Body===================*/
+
+body{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/*======================Header=================*/
+
+h1{
+  text-align: center;
+  flex: auto;
+}
+
+.bleu{
+  display: flex;
+  background-color: #3399ff;
+  flex: 7.5%;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/*======================Main===================*/
+
+main{
+  display: flex;
+  flex: 75%;
+  flex-direction: column;
+}
+
+section{
+  display: flex;
+  flex: 50%;
+  flex-direction: column;
+}
+
+.sec{
+  display: flex;
+  flex: 66%;
+}
+
+.vert{
+  display: flex;
+  background-color: #99ff33;
+  flex: 33%;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+
+.jaune{
+  display: flex;
+  background-color: #ffff00;
+  flex: 50%;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/*======================Pimp===================*/
+
+.rouge{
+  display: flex;
+  background-color: #ff5050;
+  margin: 10px;
+  flex: 7.5%;
+  border-radius: 5px;
+}
+
+/*======================Footer===================*/
+
+
+
+
+
+
+
+
+/*======================Form===================*/
+/*======================Pimp===================*/
+/*----------------------Name of Tags--------------------*/
+/*----------------------Links--------------------*/
+
+
+
+
+/*=================MediaQuery================*/
+
+@media screen and (min-width: 100px) and (max-width: 600px) {
+
+
+}

@@ -1,0 +1,215 @@
+:root {
+  --border: solid 3.5px black;
+  --marg: 20px;
+  --padd: 20px;
+
+}
+
+
+/*======================Header=================*/
+
+
+header{
+  display: flex;
+  border: var(--border);
+}
+
+h1{
+  padding: var(--padd);
+}
+
+nav{
+  display: flex;
+  border: var(--border);
+  margin: auto 10px auto auto;
+  padding: 5px;
+}
+
+nav ul{
+  display: flex;
+  border: var(--border);
+  list-style-type: non;
+  flex-direction: row;
+}
+
+nav li:hover{
+  color:green;
+}
+
+nav li{
+  display: block;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+/*----------------------Name of Tags--------------------*/
+
+.oth{
+    margin-top:-15px;
+    margin-left:5px;
+    padding : 1px;
+    background:white;
+    position:absolute;
+}
+
+.art{
+    margin-top:-32px;
+    margin-left:5px;
+    padding : 1px;
+    background:white;
+    position:absolute;
+}
+
+.foo{
+    margin-top:-15px;
+    margin-left:5px;
+    padding : 1px;
+    background:white;
+    position:absolute;
+}
+
+/*----------------------Links--------------------*/
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  background-color: lightblue;
+}
+
+a:link{
+  color: black;
+}
+
+a:visited{
+  color: black;
+}
+
+
+/*======================Body===================*/
+
+body{
+display: flex;
+height: calc(100vh - 15px);
+flex-direction: column;
+}
+
+.maine{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+section{
+  border: var(--border);
+  margin : var(--marg);
+  display: flex;
+  flex-direction: column;
+  flex: 80%;
+}
+
+article{
+  border: var(--border);
+  margin : var(--marg);
+  padding: var(--padd);
+  flex: 80%;
+}
+
+aside{
+  margin : var(--marg) var(--marg) var(--marg) auto;
+  border: var(--border);
+  flex: 20%;
+  padding: var(--padd);
+}
+
+/*======================Pimp===================*/
+
+.container{
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+#lin{
+background: linear-gradient(to right, #AAD8E6, #00008b);
+}
+
+/*======================Footer===================*/
+
+footer{
+  margin-top: auto;
+  width: 99%;
+  bottom: 10px;
+  border: var(--border);
+  text-align: center;
+}
+
+/*======================Form===================*/
+
+form{
+display: flex;
+flex-direction: column;
+}
+
+form div{
+display: flex;
+padding: 2px;
+}
+
+form label{
+flex: 35%;
+padding : 5px;
+}
+
+form input{
+flex: 65%;
+padding : 2px;
+}
+
+form select{
+flex: 65%;
+padding : 2px;
+}
+
+form textarea{
+flex: 65%;
+padding : 2px;
+}
+
+.bouton{
+  float: right;
+  width: 30%;
+  margin-right: 20px;
+}
+
+/*=================MediaQuery================*/
+
+@media screen and (min-width: 100px) and (max-width: 600px) {
+
+  header{
+    font-size: 11px;
+  }
+
+  h1{
+    font-size: 20px;
+  }
+
+  main{
+    font-size: 11px;
+   }
+
+   form div{
+   flex-direction : column;
+   }
+
+   input[type="text"], input[type="email"], input[type="number"], label {
+       min-width: 80%;
+   }
+
+
+   footer{
+     font-size: 11px;
+   }
+
+}

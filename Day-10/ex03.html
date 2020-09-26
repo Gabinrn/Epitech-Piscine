@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Day-10</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+      <header>
+        <h1>Day-10</h1>
+      </header>
+
+      <div>
+
+          <form class="form" style="border: solid 1px black; background-color: lightgrey; display: flex;">
+              <div class="email" style="margin-top: 15px; margin-left: 15px; margin-bottom: 15px;">
+                  <label for="email">E-mail: </label>
+                  <input type="email" name="email" id="email" required>
+              </div>
+              <div class="btn" style="margin-top: 7px; margin-bottom: 15px;">
+                  <input type="submit" value="Submit your email!">
+              </div>
+              <div>
+                <p style="margin-top: 15px; margin-bottom: 15px;">
+                  Format nécessaire : xxxxxxx@xxx.xxx | Format erroné : xxxx@xxx
+                </p>
+              </div>
+          </form>
+
+
+      </div>
+
+        <footer>
+
+        </footer>
+  <script type="text/javascript">
+    $(".form").on('submit', function(evt){
+      event.preventDefault();
+      var contenu = $(".form").find('input[type="email"]').val();
+      $.ajax({
+          type: 'post',
+          url: 'ex03.php',
+          data: { email: contenu },
+          success: function(content){
+            var done = JSON.parse(content);
+            alert("Your E-mail : '" + done + "' has been sent Succefully !");
+
+          },
+          error: function(){
+            alert("Your E-mail is incorrect or an error has been done");
+          }
+      });
+    });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

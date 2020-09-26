@@ -1,0 +1,105 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ex_16</title>
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <style>
+
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 95vh;
+    }
+
+    header {
+      text-align: center;
+      background-color: lightgrey;
+      border-radius: 10px;
+      border: solid 2px black;
+      margin: 30px 250px 30px 250px;
+    }
+
+    .optn {
+      display : flex;
+      text-align: center;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    main {
+      display : flex;
+      text-align: center;
+      background-color: lightgrey;
+      border-radius: 10px;
+      border: solid 2px black;
+      margin: 30px 250px 30px 250px;
+      padding: 30px;
+    }
+
+    footer {
+      margin: auto auto 1px auto;
+    }
+
+    .navig {
+      background-color: lightgrey;
+      flex: 1;
+      padding:15px;
+      border-radius: 5px;
+      border: solid 2px black;
+    }
+
+    a {
+      text-decoration: none;
+      color : black;
+      font-size: 18px;
+    }
+
+
+  </style>
+</head>
+<body>
+      <header>
+        <h1>Ex_16</h1>
+      </header>
+      <main>
+
+
+
+        <div class="optn">
+          <h2>Selectionnez une note, un e-mail ou une tâche à ajouter</h2>
+
+
+        <select name="choix" id="sel">
+            <option value="rien">--------</option>
+            <option value="note">Note</option>
+            <option value="email">E-mail</option>
+            <option value="todolist">Tâches</option>
+        </select>
+
+        <input type="text" id="listItem" name="listItem"></input>
+        <button id="btn">Ajouter</button>
+
+        <ul id="listReceive"> Liste des mots acceptés :</ul>
+
+      </div>
+
+      </main>
+      <footer>
+          <nav>
+            <button class="navig">
+            <a href="../ex_15/index.html">
+                Previous Exercise
+            </a>
+            </button>
+            <button class="navig">
+            <a href="../ex_17/index.html">
+                Next Exercise
+            </a>
+            </button>
+          </nav>
+      </footer>
+
+  <script src="./option.js"></script>
+</body>
+</html>
